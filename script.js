@@ -3,7 +3,7 @@ gsap.registerPlugin(TextPlugin);
 
 var container = $("#l");
 function machineGun() {
-  var sentences = ["block all apps", "save time","get rewards"]
+  var sentences = ["block it all", "save time","get rewards"]
   var words = sentences,
       tl = gsap.timeline({repeat:-1, repeatDelay: 0}),
       wordCount = words.length,
