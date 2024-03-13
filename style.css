@@ -470,7 +470,6 @@ background-color:rgba(90, 16, 147, 0.303);
   list-style: none;
   height: 100%;
   display: flex;
-  gap: 1em;
   animation: scrolling var(--marquee-animation-duration) linear infinite;
 }
 
