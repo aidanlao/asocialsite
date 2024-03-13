@@ -403,6 +403,7 @@ justify-content: center;
   background-color:rgba(57, 11, 93, 0.111);
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 0.5em;
   border: 1px solid rgba(101, 18, 164, 0.229);
   border-radius: 1em;
@@ -418,6 +419,7 @@ justify-content: center;
 .header {
   width: fit-content;
 border-radius: 5em;
+text-align: center;
 padding: 0em 1em;
 background-color:rgba(90, 16, 147, 0.303);
 }
