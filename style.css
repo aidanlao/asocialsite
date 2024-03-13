@@ -377,5 +377,184 @@ h1 {
 
 /*steps*/ 
 .steps {
-min-height: 80vh;
+  background-color: transparent;
+min-height: 30em;
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+gap: 1em;
+padding-top: 5em;
+justify-content: center;
 }
+.step h1 {
+  font-size: 1.5em;
+}
+.step {
+  width: 20em;
+  padding: 1em;
+  background-color:rgba(57, 11, 93, 0.111);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border: 1px solid rgba(101, 18, 164, 0.229);
+  border-radius: 1em;
+  box-shadow: rgba(114,50,164,0.3) 0px 7px 29px 0px; 
+ 
+}
+.step img {
+  width: 100%;
+  border-radius: 1em;
+  object-fit: cover;
+
+}
+.header {
+  width: fit-content;
+border-radius: 5em;
+padding: 0em 1em;
+background-color:rgba(90, 16, 147, 0.303);
+}
+.step .content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+/*Marquee Comment*/
+
+:root {
+  --marquee-width: 100%;
+  --marquee-height: 9em;
+  /* --marquee-elements: 12; */
+  /* defined with JavaScript */
+  --marquee-elements-displayed: 5;
+  --marquee-element-width:  20em;
+ 
+  --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+}
+
+.marquee {
+  width: var(--marquee-width);
+  height: var(--marquee-height);
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee:before,
+.marquee:after {
+  position: absolute;
+  top: 0;
+  width: 10rem;
+  height: 100%;
+  content: "";
+  z-index: 1;
+}
+
+.marquee:before {
+  left: 0;
+  background: linear-gradient(to right, #000000 0%, transparent 100%);
+}
+
+.marquee:after {
+  right: 0;
+  background: linear-gradient(to left, #000000 0%, transparent 100%);
+}
+
+.marquee-content {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  gap: 1em;
+  animation: scrolling var(--marquee-animation-duration) linear infinite;
+}
+
+.marquee-content:hover {
+  animation-play-state: paused;
+}
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements)));
+  }
+}
+
+.marquee-content li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  flex-shrink: 0;
+  width: var(--marquee-element-width);
+  max-height: 100%;
+  /* 5rem; */
+}
+
+
+@media (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+
+  :root {
+    --marquee-width: 100vw;
+    --marquee-height: 9em;
+    --marquee-elements-displayed: 3;
+  }
+
+  .marquee:before,
+  .marquee:after {
+    width: 5rem;
+  }
+}
+.card {
+  border: 1px solid #420e68;
+  background-color: #1b042c;
+  box-shadow: rgba(114,50,164,0.3) 0px 7px 29px 0px; 
+  color: #fffefe;
+  display: flex;
+  border-radius: 0.5em;
+  overflow: hidden;
+  justify-content: start;
+  padding: 0;
+}
+.cardimage {
+  width: 30%;
+  height: 100%;
+}
+.cardimage img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.cardcontent {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  height: 100%;
+}
+.card .business {
+  color: #777777;
+}
+.cardcontent .description {
+  width: 100%;
+  display: flex;
+  font-family: sans-serif;
+  font-weight:bold;
+  gap: 1em;
+  flex-direction: column;
+  flex: 1 1 auto;
+  padding: 0.8em 1em;
+}
+.cardcontent .distance {
+  color: #777777;
+  background-color: #222222;
+  padding: 0.9em 1em;
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+/*Marquee End*/
