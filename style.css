@@ -2,10 +2,11 @@ html {
   height: 100%;
   width: 100%;
   font-size: 14px;
-  background: rgb(78, 0, 136);
-  background: radial-gradient(circle, rgba(78, 0, 136, 1) 0%, rgba(20, 20, 24, 1) 100%);
 }
-
+html, body {
+  
+background-color: #230739;
+}
 * {
   margin: 0;
   padding: 0;
@@ -37,16 +38,17 @@ h1 {
 
 .homepage {
   background: rgb(78, 0, 136);
-  background: radial-gradient(circle, rgba(78, 0, 136, 1) 0%, rgba(20, 20, 24, 1) 100%);
+  background: radial-gradient(circle, rgba(78, 0, 136, 1) 0%, rgb(38, 4, 64) 100%);
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 98%, 0 90%);
   
 }
 .homepage .wrapper {
   
-  max-width: 60em;
+  max-width: 65em;
   display: flex;
   justify-content: center;
   align-items: stretch;
@@ -73,11 +75,12 @@ h1 {
 }
 
 .homepage .text h1 {
-  font-size: clamp(3rem, 10vw, 4rem);
+  font-size: clamp(3rem, 5vw, 3.3rem);
   color: white;
 }
 
 .homepage .text {
+  padding-bottom: 3em;
   max-width: 20rem;
 }
 
@@ -87,6 +90,7 @@ h1 {
   -webkit-text-fill-color: transparent;
   font-family: "Barlow", sans-serif;
 }
+
 
 .homepage .left {
   display: flex;
@@ -121,6 +125,7 @@ h1 {
 .homepage #l {
   display: block;
   position: relative;
+  
 }
 .homepage #l .hidden {
   position: static;
@@ -130,8 +135,12 @@ h1 {
   position: absolute; 
   top: 0;
   left: 0;
+  background: -webkit-linear-gradient(#5B00CE, #b980ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Barlow", sans-serif;
   display: block;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 
 }
 @media (max-width: 768px) {
@@ -153,6 +162,7 @@ h1 {
   }
   .homepage .text {
     max-width: 100%;
+
     
   }
   .homepage .right img {
@@ -210,6 +220,7 @@ h1 {
 }
 .navigation ul .links {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .navigation ul .links a {
@@ -235,12 +246,15 @@ h1 {
   .navigation .logo {
     object-fit: contain; height: 2rem;
   }
+  .navigation ul {
+    padding: 0;
+  }
   .navigation {
     box-sizing: border-box;
     padding: 0.5em 1em;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .navigation ul li a {
     font-size: 0.8em;
     padding: 0.3em 0.8em;
@@ -251,7 +265,7 @@ h1 {
     border: 1px solid transparent;
   }
   .navigation ul {
-
+    padding: 0;
     border-radius: 0.5em;
   }
   .navigation ul .links {
@@ -358,4 +372,10 @@ h1 {
   .downloadcta {
     padding: 0.5rem 1rem;
   }
+}
+
+
+/*steps*/ 
+.steps {
+min-height: 80vh;
 }
