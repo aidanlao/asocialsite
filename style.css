@@ -431,7 +431,9 @@ background-color:rgba(90, 16, 147, 0.303);
  
   --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
 }
-
+.marqueeViewarea {
+  padding: 2em 0em;
+}
 .marquee {
   width: var(--marquee-width);
   height: var(--marquee-height);
