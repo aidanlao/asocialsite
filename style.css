@@ -565,8 +565,7 @@ background-color:rgba(90, 16, 147, 0.303);
   padding: 0.8em 1em;
 }
 .cardcontent .distance {
-  color: #777777;
-  background-color: #222222;
+  background-color: rgb(31, 5, 51);
   padding: 0.9em 1em;
 }
 html {
