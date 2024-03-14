@@ -515,7 +515,7 @@ background-color:rgba(90, 16, 147, 0.303);
 
   :root {
     --marquee-width:100%;
-    --marquee-height: 9em;
+    --marquee-height: 10em;
     --marquee-elements-displayed: 3;
   }
 
