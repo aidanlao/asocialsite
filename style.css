@@ -678,6 +678,7 @@ html {
   gap: 3em;
 }
 .cta h1 {
+  text-align: center;
   font-size: 2em;
 }
 .contactForm form {
