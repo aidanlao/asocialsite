@@ -681,6 +681,9 @@ html {
   text-align: center;
   font-size: 2em;
 }
+body {
+  overflow: hidden;
+}
 .contactForm form {
   display: flex;
   align-items: start;
@@ -697,7 +700,7 @@ html {
   font-size: 1em;
   padding: 2em;
   
-  padding-top: 20em;
+  padding: 20em 2em;
   gap: 3em;
   text-align: center;
   justify-content: center;
