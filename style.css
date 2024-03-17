@@ -682,7 +682,7 @@ html {
   font-size: 2em;
 }
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .contactForm form {
   display: flex;
