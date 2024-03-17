@@ -741,7 +741,7 @@ body {
 }
 .faq {
 padding: 2em;
-  padding-top: 20em;
+  padding-top: 10em;
 display: flex;
 flex-direction: column;
 gap: 3em;
