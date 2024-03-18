@@ -554,9 +554,9 @@ background-color:rgba(90, 16, 147, 0.303);
   animation: scrolling var(--marquee-animation-duration) linear infinite;
 }
 
-.marquee-content:hover {
+/* .marquee-content:hover {
   animation-play-state: paused;
-}
+} */
 @keyframes scrolling {
   0% {
     transform: translateX(0);
@@ -675,6 +675,7 @@ html {
   padding: 1em;
   text-align: center;
   font-size: 1.5em;
+  padding-bottom: 20em;
   flex-direction: column;
   gap: 3em;
 }
